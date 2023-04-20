@@ -1,0 +1,110 @@
+:root{
+    --colortexto: #ffffff;
+    --coloramarillo: #f4da35;
+    --colorblanco: #fff;
+    --colorheaderabajo: #050a30;
+    --colornav: rgba(255, 255, 255, 0);
+    --coloriconredes: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contedor_cabecera{
+    width: 100%;
+    display: block;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    
+}
+.contedor_cabecera.abajo{
+    background-color: var(--colorheaderabajo);
+    margin: 1rem;
+    border-radius: 20px;
+    width: 97%;
+}
+/*icon de menu hamburgesa*/
+.menu_burger{
+    display: none;
+}
+.fa-bars{
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+/*menu*/
+.navegator{
+    /*margin: 1rem;
+    padding: .5rem;*/
+    background: var(--colornav);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo_nav{
+    display: block;
+}
+.logo_nav img{
+    width: 280px;
+}
+
+/*.contenedor_nav{
+    background-color: var(--colornav);
+}*/
+.menu_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu_item{
+    padding: 0 1rem;
+}
+.link_nav{
+    text-decoration: none;
+    font-size: 1.18rem;
+    font-weight: 600;
+    letter-spacing: .091rem;
+    color: var(--colortexto);
+}
+
+/*estilos de los iconos de redes sociales del nav*/
+.icon_nav{
+    display: block;
+}
+.icon_link{
+    text-decoration: none;
+}
+.icon_link .fa-facebook,.fa-instagram,.fa-whatsapp{
+    font-size: 1.6rem;
+    color: var(--coloriconredes);
+    padding: 0 .8rem;
+}
+
+
+
+
+/*primera seccion - nosotros*/
+
+.banner_contenedor{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros_contenedor{
+    width: 100%;
+    height: 100vh;
+}

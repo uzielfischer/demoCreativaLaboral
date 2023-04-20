@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px){
+    .menu_burger{
+        display: block;
+        position: absolute;
+        top: 3.9rem;
+        left: 24rem;
+
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .logo_nav img{
+        width: 200px;
+    }
+    
+    .menu_nav{
+        flex-direction: column;
+        transition: transform .3s;
+        transform: translateY(-100%);
+    }
+    .menu_nav--show{
+        transform: translateY(0);
+    }
+    .menu_item{
+        padding: 1rem 0;
+    }
+
+    .icon_nav{
+        display: none;
+    }
+
+}
