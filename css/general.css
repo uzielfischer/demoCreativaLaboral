@@ -3,7 +3,7 @@
     --coloramarillo: #f4da35;
     --colorblanco: #fff;
     --colorheaderabajo: #050a30;
-    --colornav: rgba(255, 255, 255, 0);
+    --colornav: rgba(5, 10, 48, .7);
     --coloriconredes: #ffffff;
 }
 
@@ -12,94 +12,82 @@
 *{
     padding: 0;
     margin: 0;
+}
+
+body{
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
 }
 
-.contedor_cabecera{
-    width: 100%;
-    display: block;
-
+.cabecera{
+    background-color: var(--colorheaderabajo);
+    height: 5rem;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
+}
+.cabecera.abajo{
     transition: .3s;
-    
-}
-.contedor_cabecera.abajo{
-    background-color: var(--colorheaderabajo);
-    margin: 1rem;
-    border-radius: 20px;
-    width: 97%;
-}
-/*icon de menu hamburgesa*/
-.menu_burger{
-    display: none;
-}
-.fa-bars{
-    font-size: 2.5rem;
-    color: #ffffff;
-}
-
-/*menu*/
-.navegator{
-    /*margin: 1rem;
-    padding: .5rem;*/
-    background: var(--colornav);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.logo_nav{
-    display: block;
-}
-.logo_nav img{
-    width: 280px;
-}
-
-/*.contenedor_nav{
     background-color: var(--colornav);
-}*/
-.menu_nav{
+    border-bottom: solid 1px #050a30;
+}
+
+.navegator{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.menu_item{
-    padding: 0 1rem;
-}
-.link_nav{
+.link_nav, .logo, .icon_link{
     text-decoration: none;
-    font-size: 1.18rem;
-    font-weight: 600;
-    letter-spacing: .091rem;
     color: var(--colortexto);
 }
-
-/*estilos de los iconos de redes sociales del nav*/
-.icon_nav{
-    display: block;
+.logo img{
+    width: 200px;
+    line-height: 5rem;
 }
-.icon_link{
-    text-decoration: none;
+.menu_nav{
+    display: flex;
+    list-style: none;
 }
-.icon_link .fa-facebook,.fa-instagram,.fa-whatsapp{
-    font-size: 1.6rem;
-    color: var(--coloriconredes);
-    padding: 0 .8rem;
+.menu_item, .icon_link{
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    line-height: 5rem;
 }
 
+.nav_link_item{
+    padding: .4rem .7rem;
+    border-radius: .5rem;
 
+}
 
+.nav_link_item:hover{
+    background-color: rgba(238, 187, 21, 01);
+    color: #050a30;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.nav_toggle{
+    color: var(--colorblanco);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 1.4rem;
+    line-height: 4rem;
+
+    display: none;
+}
 
 /*primera seccion - nosotros*/
 
 .banner_contenedor{
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
     background-image: url(/img/banner.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -107,4 +95,5 @@
 .nosotros_contenedor{
     width: 100%;
     height: 100vh;
+    background-color: #f4da35;
 }

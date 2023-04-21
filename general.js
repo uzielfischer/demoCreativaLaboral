@@ -1,4 +1,4 @@
-const header = document.querySelector(".contedor_cabecera");
+const header = document.querySelector(".cabecera");
 const toggleMenu = document.getElementById('menu_burger');
 const menuResponsive = document.getElementById('menu_nav');
 

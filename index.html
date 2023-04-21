@@ -11,37 +11,31 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header class="contedor_cabecera">
-        <div id="menu_burger" class="menu_burger">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="navegator">
-            <div class="logo_nav">
-                <a href="index.html">
-                    <img src="img/logoblanco.png" alt="CreativaLaboral" class="log">
-                </a>
-            </div>
-            
-            <div class="contenedor_nav">
-                <ul id="menu_nav" class="menu_nav">
-                    <il class="menu_item">
-                        <a href="nosotro.html" class="link_nav">Nosotros</a>
-                    </il>
-                    <il class="menu_item">
-                        <a href="servicos.html" class="link_nav">Servicios</a>
-                    </il>
-                    <il class="menu_item">
-                        <a href="contacto.html" class="link_nav">Contáctanos</a>
-                    </il>
-                </ul>
-            </div>
-    
+    <header class="cabecera">
+        <nav class="navegator">
+            <a href="index.html" class="logo">
+                <img src="img/logoblanco.png" alt="CreativaLaboral" class="log">
+            </a>
+            <ul id="menu_nav" class="menu_nav">
+                <li class="menu_item">
+                    <a href="nosotro.html" class="link_nav nav_link_item">Nosotros</a>
+                </li>
+                <li class="menu_item">
+                    <a href="servicos.html" class="link_nav nav_link_item">Servicios</a>
+                </li>
+                <li class="menu_item">
+                    <a href="contacto.html" class="link_nav nav_link_item nav_link_item_active">Contáctanos</a>
+                </li>
+            </ul>
             <div class="icon_nav">
                 <a href="#" class="icon_link"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#" class="icon_link"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#" class="icon_link"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
-        </div>
+            <button id="menu_burger" class="nav_toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
     </header>
 
     <section class="banner_contenedor"></section>

@@ -1,32 +1,61 @@
 @media screen and (max-width: 768px){
-    .menu_burger{
-        display: block;
-        position: absolute;
-        top: 3.9rem;
-        left: 24rem;
-
-        cursor: pointer;
-        z-index: 1;
+    .cabecera{
+        height: 4rem;
+    }
+    .cabecera.abajo{
+        transition: .3s;
+        background-color: var(--colornav);
+        border-bottom: solid 1px #050a30;
     }
     
-    .logo_nav img{
-        width: 200px;
+    .logo img{
+        width: 180px;
+        line-height: 4rem;
     }
-    
     .menu_nav{
         flex-direction: column;
-        transition: transform .3s;
-        transform: translateY(-100%);
+        align-items: center;
+        background-color: #050a30;
+        position: fixed;
+        left: 0;
+        top: 4rem;
+        width: 100%;
+        padding: 1.4rem 0;
+
+        height: calc(100% - 4rem);
+        overflow-y: auto;
+
+        left: -100%;
+        transition: left .3s;
     }
-    .menu_nav--show{
-        transform: translateY(0);
+    .cabecera.abajo .menu_nav{
+        background-color: var(--colornav);
     }
     .menu_item{
-        padding: 1rem 0;
+        line-height: 4.5rem;
+    }
+    
+    .nav_link_item:hover,
+    .nav_link_item_active{
+        background-color: rgba(238, 187, 21, 01);
+        color: #050a30;
+        font-weight: 700;
+        letter-spacing: .05rem;
+        transition: .5s;
     }
 
     .icon_nav{
         display: none;
     }
+    
+    .nav_toggle{
+        display: block;
+    }
 
+    .menu_nav--show{
+        left: 0;
+    }
+
+    /*SEcciones de la pagina de index*/
+    
 }
