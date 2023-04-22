@@ -1,10 +1,11 @@
 @media screen and (max-width: 768px){
     .cabecera{
         height: 4rem;
+        width: 88%;
     }
     .cabecera.abajo{
         transition: .3s;
-        background-color: var(--colornav);
+        background-color: var(--colorazul);
         border-bottom: solid 1px #050a30;
     }
     
@@ -57,5 +58,34 @@
     }
 
     /*SEcciones de la pagina de index*/
+    .nosotros_contenedor{
+        height: 95vh;
+    }
+    .title{
+        color: var(--colorazul);
+        font-size: 3rem;
+        text-align: center;
     
+        margin: 2rem 0;
+    }
+    .contenido_nosotro{
+        display: block;
+        text-align: center;
+    
+        padding: 2rem;
+    }
+    .contenido_nosotro img{
+        width: 220px;
+
+    }
+    .parrafo_nosotros{
+        font-size: .8rem;
+    }
+
+    .servicios_contenedor{
+        height: 270vh;
+    
+        background-color: #050a30;
+        padding-top: 2rem;
+    }
 }

@@ -1,6 +1,8 @@
 :root{
     --colortexto: #ffffff;
-    --coloramarillo: #f4da35;
+    --colorazul: #050a30;
+    --coloramarillo: #e0c304;
+    --colorazulclaro: #193964;
     --colorblanco: #fff;
     --colorheaderabajo: #050a30;
     --colornav: rgba(5, 10, 48, .7);
@@ -20,17 +22,23 @@ body{
 }
 
 .cabecera{
-    background-color: var(--colorheaderabajo);
+    background-color: #050a30;
+    border-radius: 1rem;
+    margin: 1rem 2rem 0 2rem;
     height: 5rem;
     position: fixed;
-    width: 100%;
+    width: 95%;
     top: 0;
     left: 0;
 }
 .cabecera.abajo{
+
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
     transition: .3s;
-    background-color: var(--colornav);
-    border-bottom: solid 1px #050a30;
+    background-color: var(--colorazul);
+    border-bottom: solid .8px var(--colorblanco);
 }
 
 .navegator{
@@ -47,6 +55,7 @@ body{
     line-height: 5rem;
 }
 .menu_nav{
+    
     display: flex;
     list-style: none;
 }
@@ -55,17 +64,15 @@ body{
     margin: 0 1rem;
     line-height: 5rem;
 }
-
 .nav_link_item{
-    padding: .4rem .7rem;
+    padding: .5rem 1rem;
     border-radius: .5rem;
-
+    letter-spacing: .08rem;
 }
-
-.nav_link_item:hover{
-    background-color: rgba(238, 187, 21, 01);
-    color: #050a30;
-    font-weight: 700;
+.nav_link_item:hover {
+    background-color: rgba(245, 245, 245, 0.877);
+    color: var(--colorazul);
+    font-weight: 500;
     transition: .5s;
 }
 
@@ -86,7 +93,7 @@ body{
 .banner_contenedor{
     min-height: 100vh;
 
-    background-image: url(/img/banner.jpg);
+    background: url(/img/bannerseis.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,6 +101,83 @@ body{
 
 .nosotros_contenedor{
     width: 100%;
+    height: 80vh;
+
+    display: block;
+}
+
+.title{
+    color: var(--colorazul);
+    font-size: 3rem;
+    text-align: center;
+
+    margin: 2rem 0;
+}
+.contenido_nosotro{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+
+    padding: 4rem;
+}
+.contenido_nosotro img{
+    width: 380px;
+    margin-bottom: 2rem;
+}
+.parrafo_nosotros{
+    text-align: justify;
+    font-size: 1.2rem;
+    color: var(--colorazul);
+}
+
+/*contendor seviciios */
+
+.servicios_contenedor{
+    width: 100%;
     height: 100vh;
-    background-color: #f4da35;
+
+    background-color: #050a30;
+    padding-top: 2rem;
+}
+.servicios_contenedor h2{
+    color: var(--colorblanco);
+}
+
+.tarjetas_servicios{
+    margin: 4rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.bloques_servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.servicios_img{
+    width: 320px;
+    height: 160px;
+
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.texto_Servicio{
+    text-decoration: none;
+    background-color: #fff;
+    margin: 1.2rem 0;
+    color: var(--colorazul);
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+
+    border-radius: .6rem;
+    padding: .5rem;
+}
+.texto_Servicio:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #020624;
+    cursor: pointer;
 }
