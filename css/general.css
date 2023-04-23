@@ -5,7 +5,7 @@
     --colorazulclaro: #193964;
     --colorblanco: #fff;
     --colorheaderabajo: #050a30;
-    --colornav: rgba(5, 10, 48, .7);
+    --colorazuldevanecido: rgba(5, 10, 48, .7);
     --coloriconredes: #ffffff;
 }
 
@@ -70,8 +70,7 @@ body{
     letter-spacing: .08rem;
 }
 .nav_link_item:hover {
-    background-color: rgba(245, 245, 245, 0.877);
-    color: var(--colorazul);
+    color: var(--coloramarillo);
     font-weight: 500;
     transition: .5s;
 }
@@ -93,7 +92,7 @@ body{
 .banner_contenedor{
     min-height: 100vh;
 
-    background: url(/img/bannerseis.png);
+    background: url(../img/bannerseis.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,7 +136,7 @@ body{
     height: 100vh;
 
     background-color: #050a30;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 .servicios_contenedor h2{
     color: var(--colorblanco);
@@ -180,4 +179,155 @@ body{
     background-color: rgba(255, 255, 255, 0.8);
     color: #020624;
     cursor: pointer;
+}
+
+/*seccion de contácto*/
+
+.contacto_contenedor{
+    width: 100%;
+    height: 100vh;
+}
+
+.box_cont{
+    background-color: #e0c304;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: .5rem;
+
+    height: 70vh;
+    margin: 0 4rem;
+    padding: 0 4rem;
+    border: solid 1px var(--colorazuldevanecido);
+    border-radius: .5rem;
+}
+
+.info_contactos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.title_info{
+    text-align: center;
+}
+
+.link_contacto{
+    text-decoration: none;
+    color: var(--colorazulclaro);
+}
+
+
+/*seccion de clientes*/
+.clientes{
+    width: 100%;
+    height: 30vh;
+}
+
+.slider {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 200px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider .slide img {
+    max-width: 100%;
+    max-height: 52px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+/*pie de pagina*/
+.continer_foot{
+    width: 100%;
+    height: 30vh;
+
+    background-color: #050a30;
+    margin: 0;
+    padding: 1rem 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo_footer img{
+    width: 200px;
+}
+.menu_footer{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu_item_footer{
+    font-size: 1rem;
+    margin: 0 1rem;
+    list-style: none;
+}
+.footer_link_item{
+    letter-spacing: .15rem;
+}
+.footer_link_item:hover{
+    color: var(--coloramarillo);
+}
+.icon_footer{
+    margin: 0;
+    padding: 0;
+}
+.icon_link_footer{
+    font-size: 2rem;
+}
+.fa-facebook:hover{
+    color: #3b5998;
+    background-color: var(--colorblanco);
+    padding: .2rem;
+    border-radius: 50%;
+    transition: .3s;
+}
+.fa-instagram:hover{
+    padding: .2rem;
+    border-radius: 50%;
+    transition: .3s;
+    background: radial-gradient(circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf);
+}
+.fa-whatsapp:hover{
+    color: #00bb2d;
+    background-color: var(--colorblanco);
+    padding: .25rem;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.derechos{
+    color: var(--colorblanco);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .7rem;
 }

@@ -36,13 +36,11 @@
         line-height: 4.5rem;
     }
     
-    .nav_link_item:hover,
-    .nav_link_item_active{
-        background-color: rgba(238, 187, 21, 01);
-        color: #050a30;
+    .nav_link_item:hover{
+        background-color: transparent;
+        color: var(--coloramarillo);
         font-weight: 700;
-        letter-spacing: .05rem;
-        transition: .5s;
+        letter-spacing: .2rem;
     }
 
     .icon_nav{
@@ -87,5 +85,18 @@
     
         background-color: #050a30;
         padding-top: 2rem;
+    }
+
+    /*contacto*/
+    
+
+    /*footer*/
+    .menu_item_footer{
+        margin: 0 .7rem;
+    }
+    .derechos{
+        text-align: center;
+        font-size: .6rem;
+
     }
 }
