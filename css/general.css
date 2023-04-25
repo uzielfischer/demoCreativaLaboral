@@ -1,10 +1,15 @@
 :root{
     --colortexto: #ffffff;
     --colorazul: #050a30;
+    --colorazuldos: #315f9e;
+    --colorazultres: #2c7fba;
+    --colorazulcuatro: #1b569c;
     --coloramarillo: #e0c304;
+    --coloramarillodos: #f4f235;
+    --colorbeig: #fdf5b1;
+    --colorgris: #eef6f8;
     --colorazulclaro: #193964;
     --colorblanco: #fff;
-    --colorheaderabajo: #050a30;
     --colorazuldevanecido: rgba(5, 10, 48, .7);
     --coloriconredes: #ffffff;
 }
@@ -19,6 +24,7 @@
 body{
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
+    background-color: var(--colorgris);
 }
 
 .cabecera{
@@ -90,12 +96,13 @@ body{
 /*primera seccion - nosotros*/
 
 .banner_contenedor{
-    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
 
     background: url(../img/bannerseis.png);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .nosotros_contenedor{
@@ -189,31 +196,98 @@ body{
 }
 
 .box_cont{
-    background-color: #e0c304;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: .5rem;
 
     height: 70vh;
     margin: 0 4rem;
-    padding: 0 4rem;
     border: solid 1px var(--colorazuldevanecido);
     border-radius: .5rem;
 }
 
 .info_contactos{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    background-color: var(--colorazuldos);
+
+    padding: 2rem;
+    border-radius: .5rem 0 0 .5rem;
 }
 .title_info{
     text-align: center;
+    color: var(--colorblanco);
+    border-bottom: 1px solid #fdfdff;
 }
+.parrafo_contactos{
+    text-align: center;
+    color: var(--colorblanco);
+    font-size: .9rem;
 
+    padding: .8rem .5rem;
+}
+.item_list_cont{
+    list-style: none;
+    text-align: center;
+    padding: .8rem .5rem;
+}
 .link_contacto{
     text-decoration: none;
-    color: var(--colorazulclaro);
+    color: var(--colorblanco);
+    font-size: 1.2rem;
+    text-align: center;
 }
+.link_contacto:hover{
+    color: var(--coloramarillodos);
+}
+.w, .i, .f, .c, .m{
+    color: var(--colorbeig);
+    font-size: 1.5rem;
+    padding: 0 .5rem 0 0;
+}
+
+.form_contactos{
+    display: block;
+    flex-direction: column;
+
+    padding: 2rem;
+}
+input, textarea{
+    width: 100%;
+    padding: .8rem;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: .3s;
+    border-bottom: 1px solid var(--colorazulclaro);
+}
+input:focus,
+textarea:focus{
+    border-bottom: 2px solid var(--colorazultres);
+}
+input::before, 
+textarea::before{
+    content: attr(type);
+    display: block;
+    margin: 1.6rem 0 0;
+}
+.btn_cont{
+    width: 20%;
+    float: left;
+    padding: .4rem .8rem;
+    margin: 2rem 0 0;
+    border: 2px solid var(--colorazul);
+    border-radius: 4rem;
+    background: 0;
+    color: var(--colorazul);
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn_cont:hover{
+    background-color: var(--colorazul);
+    color: var(--colorgris);
+}
+
 
 
 /*seccion de clientes*/
@@ -300,14 +374,14 @@ body{
 .icon_link_footer{
     font-size: 2rem;
 }
-.fa-facebook:hover{
+.hover_face_footer:hover{
     color: #3b5998;
     background-color: var(--colorblanco);
     padding: .2rem;
     border-radius: 50%;
     transition: .3s;
 }
-.fa-instagram:hover{
+.hover_ins_footer:hover{
     padding: .2rem;
     border-radius: 50%;
     transition: .3s;
@@ -318,7 +392,7 @@ body{
     #9b36b7 85%,
     #515ecf);
 }
-.fa-whatsapp:hover{
+.hover_whats_footer:hover{
     color: #00bb2d;
     background-color: var(--colorblanco);
     padding: .25rem;

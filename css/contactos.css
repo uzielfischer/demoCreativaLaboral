@@ -1,0 +1,39 @@
+:root{
+    --colortexto: #ffffff;
+    --colorazul: #050a30;
+    --colorazuldos: #315f9e;
+    --colorazultres: #2c7fba;
+    --colorazulcuatro: #1b569c;
+    --coloramarillo: #e0c304;
+    --coloramarillodos: #f4f235;
+    --colorbeig: #fdf5b1;
+    --colorgris: #eef6f8;
+    --colorazulclaro: #193964;
+    --colorblanco: #fff;
+    --colorazuldevanecido: rgba(5, 10, 48, .7);
+    --coloriconredes: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--colorgris);
+}
+
+.head_contactos{
+    width: 100%;
+    height: 40vh;
+}
+
+/*mapa*/
+
+.mapa{
+    width: 100%;
+}

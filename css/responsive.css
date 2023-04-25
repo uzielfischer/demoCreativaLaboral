@@ -88,7 +88,34 @@
     }
 
     /*contacto*/
+    .contacto_contenedor{
+        width: 100%;
+        height: 160vh;
+    }
     
+    .box_cont{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;
+        border: none;
+    }
+    .info_contactos{
+        border-radius: .5rem;
+    }
+    .link_contacto{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .w, .i, .f, .c, .m{
+        font-size: 1.2rem;
+    }
+
+    .form_contactos{
+        padding: 1rem;
+    }
+    .btn_cont{
+        width: 40%;
+    }
 
     /*footer*/
     .menu_item_footer{
