@@ -24,7 +24,7 @@
 body{
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-    background-color: var(--colorgris);
+    background-color: var(--colorblanco);
 }
 
 .cabecera{
@@ -61,7 +61,7 @@ body{
     line-height: 5rem;
 }
 .menu_nav{
-    
+    width: auto;
     display: flex;
     list-style: none;
 }
@@ -72,13 +72,13 @@ body{
 }
 .nav_link_item{
     padding: .5rem 1rem;
-    border-radius: .5rem;
     letter-spacing: .08rem;
 }
 .nav_link_item:hover {
     color: var(--coloramarillo);
+    border-bottom: 1px solid #fff;
     font-weight: 500;
-    transition: .5s;
+    transition: .5s all;
 }
 
 .nav_toggle{
@@ -142,7 +142,12 @@ body{
     width: 100%;
     height: 100vh;
 
-    background-color: #050a30;
+    background: radial-gradient(circle at 33% 100%,
+    #050a30 4%,
+    #193964 30%,
+    #1b569c 62%,
+    #2c7fba 85%,
+    #e0c304);
     padding-top: 1rem;
 }
 .servicios_contenedor h2{
@@ -192,7 +197,7 @@ body{
 
 .contacto_contenedor{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .box_cont{
@@ -204,10 +209,13 @@ body{
     margin: 0 4rem;
     border: solid 1px var(--colorazuldevanecido);
     border-radius: .5rem;
+    -webkit-box-shadow: -1px 9px 18px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 18px -7px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 18px -7px rgba(0,0,0,0.75);
 }
 
 .info_contactos{
-    background-color: var(--colorazuldos);
+    background-color:#c09f0b;
 
     padding: 2rem;
     border-radius: .5rem 0 0 .5rem;
@@ -236,10 +244,10 @@ body{
     text-align: center;
 }
 .link_contacto:hover{
-    color: var(--coloramarillodos);
+    border-bottom: 1px solid #fff;
 }
 .w, .i, .f, .c, .m{
-    color: var(--colorbeig);
+    color: var(--colorblanco);
     font-size: 1.5rem;
     padding: 0 .5rem 0 0;
 }
@@ -293,7 +301,16 @@ textarea::before{
 /*seccion de clientes*/
 .clientes{
     width: 100%;
-    height: 30vh;
+    height: 40vh;
+}
+
+.title_cliente{
+    color: var(--colorazul);
+    font-size: 3rem;
+    text-align: center;
+
+    margin: 2rem 0;
+    padding-top: 2rem;
 }
 
 .slider {
@@ -339,7 +356,7 @@ textarea::before{
     width: 100%;
     height: 30vh;
 
-    background-color: #050a30;
+    background-color: var(--colorazul);
     margin: 0;
     padding: 1rem 0 0 0;
 
