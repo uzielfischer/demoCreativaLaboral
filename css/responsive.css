@@ -30,12 +30,14 @@
         transition: left .3s;
     }
     .cabecera.abajo .menu_nav{
-        background-color: var(--colornav);
+        background-color: var(--coloramarillo);
     }
     .menu_item{
         line-height: 4.5rem;
     }
-    
+    .cabecera.abajo .menu_item{
+        font-size: 1.5rem;
+    }
     .nav_link_item:hover{
         background-color: transparent;
         color: var(--coloramarillo);
@@ -56,9 +58,7 @@
     }
 
     /*SEcciones de la pagina de index*/
-    .nosotros_contenedor{
-        height: 95vh;
-    }
+    
     .title{
         color: var(--colorazul);
         font-size: 3rem;
@@ -81,7 +81,6 @@
     }
 
     .servicios_contenedor{
-        height: 270vh;
     
         background-color: #050a30;
         padding-top: 2rem;
@@ -89,15 +88,11 @@
 
     /*contacto*/
     .contacto_contenedor{
-        width: 100%;
-        height: 160vh;
+        height: 170vh;
     }
-    
     .box_cont{
-        display: flex;
-        flex-direction: column;
+        display: block;
         margin: 0 2rem;
-        border: none;
     }
     .info_contactos{
         border-radius: .5rem;
@@ -116,6 +111,8 @@
     .btn_cont{
         width: 40%;
     }
+
+
 
     /*footer*/
     .menu_item_footer{

@@ -107,7 +107,7 @@ body{
 
 .nosotros_contenedor{
     width: 100%;
-    height: 80vh;
+    
 
     display: block;
 }
@@ -140,7 +140,6 @@ body{
 
 .servicios_contenedor{
     width: 100%;
-    height: 100vh;
 
     background: radial-gradient(circle at 33% 100%,
     #050a30 4%,
@@ -155,7 +154,8 @@ body{
 }
 
 .tarjetas_servicios{
-    margin: 4rem 0 0 0;
+    margin: 4rem;
+    padding-bottom: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 1.5rem;
@@ -169,7 +169,7 @@ body{
 }
 .servicios_img{
     width: 320px;
-    height: 160px;
+    height: 200px;
 
     object-fit: cover;
     border-radius: .5rem;
@@ -197,7 +197,6 @@ body{
 
 .contacto_contenedor{
     width: 100%;
-    height: 80vh;
 }
 
 .box_cont{
@@ -207,7 +206,6 @@ body{
 
     height: 70vh;
     margin: 0 4rem;
-    border: solid 1px var(--colorazuldevanecido);
     border-radius: .5rem;
     -webkit-box-shadow: -1px 9px 18px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 9px 18px -7px rgba(0,0,0,0.75);
@@ -301,7 +299,7 @@ textarea::before{
 /*seccion de clientes*/
 .clientes{
     width: 100%;
-    height: 40vh;
+    margin-bottom: 3rem;
 }
 
 .title_cliente{
@@ -315,9 +313,7 @@ textarea::before{
 
 .slider {
     width: 90vw;
-    height: auto;
     margin: auto;
-    overflow: hidden;
 }
 
 .slider .slide-track {

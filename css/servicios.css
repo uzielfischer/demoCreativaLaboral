@@ -8,7 +8,6 @@
     --coloramarillodos: #f4f235;
     --colorbeig: #fdf5b1;
     --colorgris: #eef6f8;
-    --colorgrisfuerte: #d1d1d1;
     --colorazulclaro: #193964;
     --colorblanco: #fff;
     --colorazuldevanecido: rgba(5, 10, 48, .7);
@@ -109,97 +108,56 @@ body{
     text-align: center;
 }
 
-.title_clientes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.title_clientes h3{
-    color: var(--colorazul);
-    font-size: 2rem;
-    padding: 0 0 3rem 0;
-}
-
-/*secciones de nosotros*/
-.contenido_about{
+/*............................................Seccion cards*/
+  
+ .card{
     width: 100%;
+    
+ }
 
+ .box_card{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 4rem;
+}
+
+ .face{
+    width: 100%;
+    height: 100%;
+    box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.4);
+    border: 1px solid var(--colorgris);
+    border-radius: .5rem;
+    transition: .5s;
+ }
+
+ .face:hover{
+    background: var(--colorazultres);
+    cursor: pointer;
+    color: var(--colorgris);
+ }
+
+ .face img{
+    max-width: 100%;
+    height: 320px;
+    object-fit: cover;
+ }
+
+ .contenido_card{
+    height: 20vh;
+    padding: .5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+    text-align: center;
+ }
+.contenido_card h3{
+    padding-bottom: 1.2rem;
 }
-.box_contenido{
-    margin: 4rem;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    
+.contenido_card p{
     text-align: justify;
+    padding: 1rem;
 }
-
-.parrafos_about{
-    font-size: 1.4rem;
-}
-
-
-.imagen_about{
-    max-width: 80%;
-}
-
-
-/*Seccion de galaeria de clientes*/
-
-.clientes_content{
-    max-width: 1200px;
-    margin: 0 4rem;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 10px;
-    grid-auto-rows: 250px;
-    grid-auto-flow: dense;
-    align-items: center;
-}
-
-.clientes_content .box_clientes figure img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-@media screen and (max-width:768px) {
-    .cabecera_otros.abajo .nav_toggle{
-        color: var(--colorazulcuatro);
-    }
-    .cabecera_otros.abajo .ul_nav{
-        color: var(--coloramarillo);
-    }
-
-    .box_contenido{
-        margin: 2rem;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .parrafos_about{
-        font-size: 1.4rem;
-    }
-    
-    
-    .imagen_about{
-        max-width: 80%;
-    }
-}
-
-@media screen and (max-width:576px) {
-    
-}
-
-
 
