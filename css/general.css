@@ -24,7 +24,7 @@
 body{
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-    background-color: var(--colorblanco);
+    background-color: var(--colorgris);
 }
 
 .cabecera{
@@ -58,7 +58,7 @@ body{
     line-height: 5rem;
 }
 .menu_nav{
-    width: auto;
+    
     display: flex;
     list-style: none;
 }
@@ -69,13 +69,13 @@ body{
 }
 .nav_link_item{
     padding: .5rem 1rem;
+    border-radius: .5rem;
     letter-spacing: .08rem;
 }
 .nav_link_item:hover {
     color: var(--coloramarillo);
-    border-bottom: 1px solid #fff;
     font-weight: 500;
-    transition: .5s all;
+    transition: .5s;
 }
 
 .nav_toggle{
@@ -138,12 +138,7 @@ body{
 .servicios_contenedor{
     width: 100%;
 
-    background: radial-gradient(circle at 33% 100%,
-    #050a30 4%,
-    #193964 30%,
-    #1b569c 62%,
-    #2c7fba 85%,
-    #e0c304);
+    background-color: #050a30;
     padding-top: 1rem;
 }
 .servicios_contenedor h2{
@@ -194,6 +189,10 @@ body{
 
 .contacto_contenedor{
     width: 100%;
+<<<<<<< HEAD
+=======
+    height: 100vh;
+>>>>>>> parent of af1518a (Se realziaron algunos cambios de estilos en el index con el color de fonde los servicios y del contacto, se cambio los efectos de color del nav de las demas secciones.)
 }
 
 .box_cont{
@@ -204,13 +203,10 @@ body{
     height: 70vh;
     margin: 0 4rem;
     border-radius: .5rem;
-    -webkit-box-shadow: -1px 9px 18px -7px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 9px 18px -7px rgba(0,0,0,0.75);
-    box-shadow: -1px 9px 18px -7px rgba(0,0,0,0.75);
 }
 
 .info_contactos{
-    background-color:#c09f0b;
+    background-color: var(--colorazuldos);
 
     padding: 2rem;
     border-radius: .5rem 0 0 .5rem;
@@ -239,10 +235,10 @@ body{
     text-align: center;
 }
 .link_contacto:hover{
-    border-bottom: 1px solid #fff;
+    color: var(--coloramarillodos);
 }
 .w, .i, .f, .c, .m{
-    color: var(--colorblanco);
+    color: var(--colorbeig);
     font-size: 1.5rem;
     padding: 0 .5rem 0 0;
 }
@@ -296,6 +292,7 @@ textarea::before{
 /*seccion de clientes*/
 .clientes{
     width: 100%;
+<<<<<<< HEAD
     margin-bottom: 3rem;
 }
 
@@ -306,6 +303,9 @@ textarea::before{
 
     margin: 2rem 0;
     padding-top: 2rem;
+=======
+    height: 30vh;
+>>>>>>> parent of af1518a (Se realziaron algunos cambios de estilos en el index con el color de fonde los servicios y del contacto, se cambio los efectos de color del nav de las demas secciones.)
 }
 
 .slider {
@@ -349,7 +349,7 @@ textarea::before{
     width: 100%;
     height: 30vh;
 
-    background-color: var(--colorazul);
+    background-color: #050a30;
     margin: 0;
     padding: 1rem 0 0 0;
 
