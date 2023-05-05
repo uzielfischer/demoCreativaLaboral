@@ -104,7 +104,7 @@ body{
 
 .nosotros_contenedor{
     width: 100%;
-    
+    height: 80vh;
 
     display: block;
 }
@@ -137,6 +137,7 @@ body{
 
 .servicios_contenedor{
     width: 100%;
+    height: 100vh;
 
     background-color: #050a30;
     padding-top: 1rem;
@@ -146,8 +147,7 @@ body{
 }
 
 .tarjetas_servicios{
-    margin: 4rem;
-    padding-bottom: 2rem;
+    margin: 4rem 0 0 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 1.5rem;
@@ -161,7 +161,7 @@ body{
 }
 .servicios_img{
     width: 320px;
-    height: 200px;
+    height: 160px;
 
     object-fit: cover;
     border-radius: .5rem;
@@ -190,9 +190,13 @@ body{
 .contacto_contenedor{
     width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     height: 100vh;
 >>>>>>> parent of af1518a (Se realziaron algunos cambios de estilos en el index con el color de fonde los servicios y del contacto, se cambio los efectos de color del nav de las demas secciones.)
+=======
+    height: 80vh;
+>>>>>>> parent of f490853 (Se terminaron las pestañas de servicios, nosotros y se hicieron acomodoen lo responsive, solo falta acomodar el menu al hacer scroll al momento de ver el menu.)
 }
 
 .box_cont{
@@ -202,6 +206,7 @@ body{
 
     height: 70vh;
     margin: 0 4rem;
+    border: solid 1px var(--colorazuldevanecido);
     border-radius: .5rem;
 }
 
@@ -293,7 +298,11 @@ textarea::before{
 .clientes{
     width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-bottom: 3rem;
+=======
+    height: 40vh;
+>>>>>>> parent of f490853 (Se terminaron las pestañas de servicios, nosotros y se hicieron acomodoen lo responsive, solo falta acomodar el menu al hacer scroll al momento de ver el menu.)
 }
 
 .title_cliente{
@@ -310,7 +319,9 @@ textarea::before{
 
 .slider {
     width: 90vw;
+    height: auto;
     margin: auto;
+    overflow: hidden;
 }
 
 .slider .slide-track {
