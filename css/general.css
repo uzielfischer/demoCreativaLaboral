@@ -29,16 +29,13 @@ body{
 
 .cabecera{
     background-color: #050a30;
-    border-radius: 1rem;
-    margin: 1rem 2rem 0 2rem;
     height: 5rem;
     position: fixed;
-    width: 95%;
+    width: 100%;
     top: 0;
     left: 0;
 }
 .cabecera.abajo{
-
     width: 100%;
     margin: 0;
     border-radius: 0;

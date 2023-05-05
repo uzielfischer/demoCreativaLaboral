@@ -7,8 +7,8 @@ window.addEventListener("scroll", function() {
     header.classList.toggle("abajo",window.scrollY>0)
 })
 
-window.addEventListener("scroll", function() {
-    header_otros.classList.toggle("abajo",window.scrollY>0)
+window.addEventListener("scroll",function(){
+    header_otros = document.toggle("abajo",window.screenY>0)
 })
 
 toggleMenu.addEventListener('click', () => {
