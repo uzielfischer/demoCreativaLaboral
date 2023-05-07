@@ -12,20 +12,26 @@
     <link rel="stylesheet" href="css/contactos.css">
 </head>
 <body>
-    <header class="cabecera">
+    <header id="cabecera_menu" class="cabecera">
         <nav class="navegator">
             <a href="index.html" class="logo">
-                <img src="img/logoblanco.png" alt="CreativaLaboral" class="log">
+                <img src="img/logocolor.png" alt="CreativaLaboral" class="log">
+            </a>
+            <a href="index.html" class="logo">
+                <img src="img/logoblanco.png" alt="CreativaLaboral" class="log_scroll">
             </a>
             <ul id="menu_nav" class="menu_nav">
                 <li class="menu_item">
-                    <a href="index.html" class="link_nav nav_link_item">INICIO</a>
+                    <a href="index.html" class="link_nav nav_link_item">Inicio</a>
                 </li>
                 <li class="menu_item">
                     <a href="servicos.html" class="link_nav nav_link_item">Servicios</a>
                 </li>
                 <li class="menu_item">
-                    <a href="nosotro.html" class="link_nav nav_link_item">Nosotros</a>
+                    <a href="#" class="link_nav nav_link_item">Vacantes</a>
+                </li>
+                <li class="menu_item">
+                    <a href="nosotro.html" class="link_nav nav_link_item nav_link_item_active">Nosotros</a>
                 </li>
             </ul>
             <div class="icon_nav">
@@ -39,14 +45,13 @@
         </nav>
     </header>
 
-    <section class="head_contactos">
-
+    <section class="titulo_secciones">
+        <h2 class="title_no">
+            Sobre nosotros
+        </h2>
     </section>
 
     <section class="contacto_contenedor">
-        <h2 class="title">
-            Contáctanos
-        </h2>
         <div class="box_cont">
             <div class="info_contactos">
                 <h3 class="title_info">Datos de contácto</h3>
@@ -108,19 +113,25 @@
         </a>
         <ul class="menu_footer">
             <li class="menu_item_footer">
-                <a href="nosotro.html" class="link_nav footer_link_item">Nosotros</a>
+                <a href="index.html" class="footer_link_item">Inicio</a>
             </li>
             <li class="menu_item_footer">
-                <a href="servicos.html" class="link_nav footer_link_item">Servicios</a>
+                <a href="servicos.html" class="footer_link_item">Servicios</a>
             </li>
             <li class="menu_item_footer">
-                <a href="contacto.html" class="link_nav footer_link_item nav_link_item_active">Contáctanos</a>
+                <a href="#" class="footer_link_item">Vacantes</a>
+            </li>
+            <li class="menu_item_footer">
+                <a href="nosotro.html" class="footer_link_item">Nosotros</a>
+            </li>
+            <li class="menu_item_footer">
+                <a href="contacto.html" class="footer_link_item nav_link_item_active">Contáctanos</a>
             </li>
         </ul>
         <div class="icon_footer">
-            <a href="#" class="icon_link icon_link_footer"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" class="icon_link icon_link_footer"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="icon_link icon_link_footer"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="icon_link_footer"><i class="fa-brands fa-facebook hover_face_footer"></i></a>
+            <a href="#" class="icon_link_footer"><i class="fa-brands fa-instagram hover_ins_footer"></i></a>
+            <a href="#" class="icon_link_footer"><i class="fa-brands fa-whatsapp hover_whats_footer"></i></a>
         </div>
         <span class="derechos">Creativa Laboral 2023 | P I X E L L Y &COPY;. Todos los derechos reservados. </span>
     </footer>

@@ -15,79 +15,9 @@
     --coloriconredes: #ffffff;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-}
-
-body{
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    background-color: var(--colorblanco);
-}
-
-.cabecera_otros{
-    background-color: #050a30;
-    height: 5rem;
-    position: fixed;
+.titulo_secciones{
     width: 100%;
-    top: 0;
-    left: 0;
-}
-.cabecera_otros.abajo{
-    transition: .3s;
-    background-color: var(--colorgris);
-    border-bottom: solid .8px var(--colorazul);
-}
-.cabecera_otros.abajo .logo{
-    display: none;
-}
-.logo_abajo img{
-    display: none;
-}
-.cabecera_otros.abajo .logo_abajo img{
-    display: block;
-    width: 200px;
-    line-height: 5rem;
-}
-
-.cabecera_otros.abajo .link_nav{
-    text-decoration: none;
-    color: var(--colorazul);
-}
-.cabecera_otros.abajo .nav_link_item {
-    padding: .5rem 1rem;
-    letter-spacing: .08rem;
-    font-weight: 600;
-}
-.cabecera_otros.abajo .nav_link_item:hover {
-    color: var(--coloramarillo);
-    border-bottom: 1px solid var(--colorazul);
-    transition: .3s;
-}
-
-.icon_link{
-    color: var(--colorblanco);
-    transition: .3s;
-}
-.icon_link:hover{
-    color: var(--coloramarillo);
-}
-.cabecera_otros.abajo .icon_link{
-    color: var(--colorazul);
-}
-.cabecera_otros.abajo .icon_link:hover{
-    background-color: var(--coloramarillo);
-    padding: .5rem;
-    border-radius: 1em;
-    transition: .3s;
-}
-
-.head_nosotros{
-    width: 100%;
-    height: 40vh;
+    margin-top: 5rem;
     background: radial-gradient(circle at 33% 100%,
     #050a30 4%,
     #193964 30%,
@@ -98,7 +28,6 @@ body{
     align-items: end;
     justify-content: center;
 }
-
 .title_no{
     width: 100%;
     padding: .4em 0;
@@ -109,4 +38,51 @@ body{
     text-align: center;
 }
 
+.contenido_box{
+    width: 100%;
+    display: block;
+}
 
+.boxing{
+    margin: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxeer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.boxeer img{
+    max-width: 360px;
+}
+
+.boxeer p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/*galeria de imagenes*/
+
+.clientes_box{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-row-gap: 100px;
+}
+
+figure{
+    width: 360px;
+}
+figure img{
+    width: 100%;
+    object-fit: cover;
+}
