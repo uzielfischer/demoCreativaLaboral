@@ -4,7 +4,7 @@
     --colorazuldos: #315f9e;
     --colorazultres: #2c7fba;
     --colorazulcuatro: #1b569c;
-    --coloramarillo: #e0c304;
+    --coloramarillo: #d4ba0d;
     --coloramarillodos: #f4f235;
     --colorbeig: #fdf5b1;
     --colorgris: #eef6f8;
@@ -24,11 +24,11 @@
 body{
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-    background-color: var(--colorgris);
+    background-color: var(--colorblanco);
 }
 
 .cabecera{
-    background-color: #050a30;
+    background-color: var(--colorgris);
     height: 5rem;
     position: fixed;
     width: 100%;
@@ -51,7 +51,7 @@ body{
 }
 .link_nav, .logo, .icon_link{
     text-decoration: none;
-    color: var(--colortexto);
+    color: var(--colorazulclaro);
 }
 .logo img{
     width: 200px;
@@ -69,12 +69,13 @@ body{
 }
 .nav_link_item{
     padding: .5rem 1rem;
-    border-radius: .5rem;
+    font-weight: 500;
     letter-spacing: .08rem;
 }
-.nav_link_item:hover {
+.nav_link_item:hover,
+.icon_link:hover {
     color: var(--coloramarillo);
-    font-weight: 500;
+    border-bottom: 1px solid var(--colorazul);
     transition: .5s;
 }
 
@@ -189,14 +190,10 @@ body{
 
 .contacto_contenedor{
     width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
     height: 100vh;
->>>>>>> parent of af1518a (Se realziaron algunos cambios de estilos en el index con el color de fonde los servicios y del contacto, se cambio los efectos de color del nav de las demas secciones.)
-=======
+
     height: 80vh;
->>>>>>> parent of f490853 (Se terminaron las pestañas de servicios, nosotros y se hicieron acomodoen lo responsive, solo falta acomodar el menu al hacer scroll al momento de ver el menu.)
 }
 
 .box_cont{
@@ -297,12 +294,8 @@ textarea::before{
 /*seccion de clientes*/
 .clientes{
     width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin-bottom: 3rem;
-=======
     height: 40vh;
->>>>>>> parent of f490853 (Se terminaron las pestañas de servicios, nosotros y se hicieron acomodoen lo responsive, solo falta acomodar el menu al hacer scroll al momento de ver el menu.)
 }
 
 .title_cliente{
@@ -312,9 +305,7 @@ textarea::before{
 
     margin: 2rem 0;
     padding-top: 2rem;
-=======
     height: 30vh;
->>>>>>> parent of af1518a (Se realziaron algunos cambios de estilos en el index con el color de fonde los servicios y del contacto, se cambio los efectos de color del nav de las demas secciones.)
 }
 
 .slider {

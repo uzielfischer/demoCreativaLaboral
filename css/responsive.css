@@ -1,7 +1,6 @@
 @media screen and (max-width: 768px){
     .cabecera{
         height: 4rem;
-        width: 28%;
     }
     .cabecera.abajo{
         transition: .3s;
