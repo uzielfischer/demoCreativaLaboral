@@ -373,7 +373,6 @@ textarea::before{
 /*pie de pagina*/
 .continer_foot{
     width: 100%;
-    height: 30vh;
 
     background-color: #050a30;
     margin: 0;
