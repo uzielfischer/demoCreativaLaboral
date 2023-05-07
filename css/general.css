@@ -57,6 +57,17 @@ body{
     width: 200px;
     line-height: 5rem;
 }
+.cabecera.abajo .log{
+    display: none;
+}
+.log_scroll{
+    display: none;
+}
+.cabecera.abajo .log_scroll{
+    display: block;
+    width: 200px;
+    line-height: 5rem;
+}
 .menu_nav{
     
     display: flex;
@@ -67,20 +78,32 @@ body{
     margin: 0 1rem;
     line-height: 5rem;
 }
+.cabecera.abajo .link_nav,
+.cabecera.abajo .icon_link{
+    color: var(--colorblanco);
+}
 .nav_link_item{
     padding: .5rem 1rem;
     font-weight: 500;
     letter-spacing: .08rem;
 }
+.icon_link{
+    padding: .5rem 1rem;
+}
 .nav_link_item:hover,
 .icon_link:hover {
-    color: var(--coloramarillo);
     border-bottom: 1px solid var(--colorazul);
-    transition: .5s;
+    transition: .3s;
+}
+.cabecera.abajo .link_nav:hover,
+.cabecera.abajo .icon_link:hover{
+    color: var(--coloramarillo);
+    border-bottom: 1px solid var(--colorblanco);
+    transition: .3s;
 }
 
 .nav_toggle{
-    color: var(--colorblanco);
+    color: var(--colorazulclaro);
     background: none;
     border: none;
     font-size: 2rem;
@@ -89,6 +112,9 @@ body{
     line-height: 4rem;
 
     display: none;
+}
+.cabecera.abajo .nav_toggle{
+    color: var(--colorblanco);
 }
 
 /*primera seccion - nosotros*/
@@ -103,10 +129,10 @@ body{
     background-position: center;
 }
 
+/*seccion de nosotros*/
+
 .nosotros_contenedor{
     width: 100%;
-    height: 80vh;
-
     display: block;
 }
 
@@ -138,8 +164,6 @@ body{
 
 .servicios_contenedor{
     width: 100%;
-    height: 100vh;
-
     background-color: #050a30;
     padding-top: 1rem;
 }
@@ -190,10 +214,6 @@ body{
 
 .contacto_contenedor{
     width: 100%;
-
-    height: 100vh;
-
-    height: 80vh;
 }
 
 .box_cont{
@@ -294,8 +314,12 @@ textarea::before{
 /*seccion de clientes*/
 .clientes{
     width: 100%;
-    margin-bottom: 3rem;
     height: 40vh;
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title_cliente{
@@ -375,16 +399,20 @@ textarea::before{
 }
 .footer_link_item{
     letter-spacing: .15rem;
+    color: var(--colorblanco);
+    text-decoration: none;
 }
 .footer_link_item:hover{
     color: var(--coloramarillo);
 }
 .icon_footer{
     margin: 0;
-    padding: 0;
+    padding: 1rem;
 }
 .icon_link_footer{
+    padding: .5rem 1rem;
     font-size: 2rem;
+    color: var(--colorblanco);
 }
 .hover_face_footer:hover{
     color: #3b5998;

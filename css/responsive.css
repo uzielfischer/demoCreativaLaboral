@@ -1,3 +1,19 @@
+:root{
+    --colortexto: #ffffff;
+    --colorazul: #050a30;
+    --colorazuldos: #315f9e;
+    --colorazultres: #2c7fba;
+    --colorazulcuatro: #1b569c;
+    --coloramarillo: #d4ba0d;
+    --coloramarillodos: #f4f235;
+    --colorbeig: #fdf5b1;
+    --colorgris: #eef6f8;
+    --colorazulclaro: #193964;
+    --colorblanco: #fff;
+    --colorazuldevanecido: rgba(5, 10, 48, .7);
+    --coloriconredes: #ffffff;
+}
+
 @media screen and (max-width: 768px){
     .cabecera{
         height: 4rem;
@@ -7,11 +23,21 @@
         background-color: var(--colorazul);
         border-bottom: solid 1px #050a30;
     }
-    
     .logo img{
-        width: 180px;
+        width: 200px;
+        line-height: 5rem;
+    }
+    .cabecera.abajo .log{
+        display: none;
+    }
+    .log_scroll{
+        display: none;
+    }
+    .cabecera.abajo .log_scroll{
+        display: block;
         line-height: 4rem;
     }
+    
     .menu_nav{
         flex-direction: column;
         align-items: center;
@@ -19,7 +45,7 @@
         position: fixed;
         left: 0;
         top: 4rem;
-        width: 28%;
+        width: 100%;
         padding: 1.4rem 0;
 
         height: calc(100% - 4rem);
@@ -29,17 +55,25 @@
         transition: left .3s;
     }
     .cabecera.abajo .menu_nav{
-        background-color: var(--colornav);
+        background-color: var(--coloramarillo);
     }
     .menu_item{
         line-height: 4.5rem;
     }
     
+    .nav_link_item{
+        color: var(--colorblanco);
+    }
     .nav_link_item:hover{
-        background-color: transparent;
         color: var(--coloramarillo);
         font-weight: 700;
         letter-spacing: .2rem;
+    }
+    .cabecera.abajo .nav_link_item{
+        color: var(--colorazul);
+    }
+    .cabecera.abajo .nav_link_item:hover{
+        color: var(--colorazul);
     }
 
     .icon_nav{
@@ -55,9 +89,7 @@
     }
 
     /*SEcciones de la pagina de index*/
-    .nosotros_contenedor{
-        height: 95vh;
-    }
+    
     .title{
         color: var(--colorazul);
         font-size: 3rem;
@@ -80,7 +112,6 @@
     }
 
     .servicios_contenedor{
-        height: 270vh;
     
         background-color: #050a30;
         padding-top: 2rem;
