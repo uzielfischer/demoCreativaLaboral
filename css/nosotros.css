@@ -37,6 +37,12 @@
     font-size: 4rem;
     text-align: center;
 }
+@media screen and (max-width: 560px){
+    .title_no{
+        font-size: 3rem;
+        
+    }
+}
 
 .contenido_box{
     width: 100%;

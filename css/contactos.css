@@ -55,7 +55,7 @@ body{
 
 .titulo_secciones{
     width: 100%;
-    margin-top: 5rem;
+    margin: 5rem 0;
     background: radial-gradient(circle at 33% 100%,
     #050a30 4%,
     #193964 30%,
@@ -74,4 +74,15 @@ body{
     color: var(--colorgris);
     font-size: 4rem;
     text-align: center;
+}
+
+@media screen and (max-width: 560px){
+    .title_no{
+        font-size: 3rem;
+        
+    }
+}
+
+.mapa{
+    margin-top: 5rem;
 }
