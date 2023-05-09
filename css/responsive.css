@@ -38,9 +38,13 @@
         line-height: 4rem;
     }
     
+    .icon_nav{
+        display: flex;
+    }
+
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 968px){
     .cabecera{
         height: 4rem;
     }
