@@ -1,0 +1,72 @@
+:root{
+    --colortexto: #ffffff;
+    --colorazul: #050a30;
+    --colorazuldos: #315f9e;
+    --colorazultres: #2c7fba;
+    --colorazulcuatro: #1b569c;
+    --coloramarillo: #e0c304;
+    --coloramarillodos: #f4f235;
+    --colorbeig: #fdf5b1;
+    --colorgris: #eef6f8;
+    --colorgrisfuerte: #d1d1d1;
+    --colorazulclaro: #193964;
+    --colorblanco: #fff;
+    --colorazuldevanecido: rgba(5, 10, 48, .7);
+    --coloriconredes: #ffffff;
+}
+
+.titulo_secciones{
+    width: 100%;
+    margin-top: 5rem;
+    background: radial-gradient(circle at 33% 100%,
+    #050a30 4%,
+    #193964 30%,
+    #1b569c 62%,
+    #2c7fba 85%,
+    #e0c304);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.title_no{
+    width: 100%;
+    padding: .4em 0;
+    margin-bottom: 2rem;
+    
+    color: var(--colorgris);
+    font-size: 4rem;
+    text-align: center;
+}
+@media screen and (max-width: 560px){
+    .title_no{
+        font-size: 3rem;
+        
+    }
+    .boxing{
+        margin: 2rem;
+    }
+}
+
+.cuerpo_aviso{
+    margin: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_aviso{
+    width: 100%;
+    display: block;
+}
+
+p, strong{
+    text-align: justify;
+    font-size: 1.2rem;
+    color: var(--colorazul);
+}
+
+ol{
+    margin: 0 0 0 2rem;
+    font-size: 1.2rem;
+    color: var(--colorazul);
+}
